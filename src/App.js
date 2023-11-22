@@ -1,12 +1,15 @@
 import React from 'react';
 import HeaderComponent from './components/HeaderComponents/HeaderComponent'
-import BodyComponents from './components/BodyComponents/BodyComponents';
 import { FooterComponents } from './components/FooterComponents/FooterComponents';
+import SearchBav from './components/BodyComponents/SearchBar';
+import SearchTypeCard from './components/BodyComponents/SearchTypeCard';
 function App() {
   return (
     <div className="App">
       <HeaderComponent/>
-      <BodyComponents/>
+      <SearchBav/>
+      <SearchTypeCard/>
+      
       <FooterComponents/>
     </div>
   );

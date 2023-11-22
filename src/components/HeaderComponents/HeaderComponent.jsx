@@ -26,7 +26,7 @@ function HeaderComponent() {
         </button>
         <button className='bg-white text-black rounded-full outline-none py-[0.4rem] px-[1rem] text-[0.9rem] font-[500] flex gap-[0.5rem] font-[600]'>
             <img width="20rem" src='https://cdn.iconscout.com/icon/free/png-256/adobe-254-761738.png' alt="Abode"/>
-            <a href="https://www.adobe.com/?promoid=RTQCN3LX">Abobe</a>
+            <a href="https://www.adobe.com/?promoid=RTQCN3LX">Adobe</a>
             </button>
     </div>
    </div>
