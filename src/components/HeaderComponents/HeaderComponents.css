@@ -1,0 +1,72 @@
+.links{
+    display:flex;
+    margin-left: -10px;
+    margin-top: 0.5rem;
+}
+.left{
+    display:flex;
+}
+.link{
+    display: flex;
+    margin-right: 10px;
+}
+.link:hover{
+    text-decoration:underline;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.logo{
+    font-size: large;
+    padding: 5px;
+}
+.buttons{
+    display: flex;
+}
+.right{
+    display: flex;
+}
+.register{
+    display: flex;
+   margin-left: 50%;
+   margin-top: -3%;
+   gap:2%;
+}
+.navbar{
+    border-bottom: 1px solid #000;
+} 
+.adobe{
+    width: 7%;
+    padding-right: 5%;
+}
+.adobelogo{
+    width: 19%;
+}
+.Log_in{
+background-color: white;
+color: blue;
+border-radius: 12px;
+border:  black solid;
+padding: 1%;
+text-decoration: none;
+
+}
+.Sign_Up{
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    padding: 1%;  
+    text-decoration: none;
+}
+.Free_trial{
+    color: white;
+    border: 1px black solid;
+    border-radius: 18px;
+    padding: 1%;
+    /* padding-right: -4%; */
+}
+.AdobePage{
+    display: flex;
+    padding: 1%;
+}

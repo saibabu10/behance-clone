@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderComponent from './components/HeaderComponets/HeaderComponent'
+import HeaderComponent from './components/HeaderComponents/HeaderComponent'
 import BodyComponents from './components/BodyComponents/BodyComponents';
 import { FooterComponents } from './components/FooterComponents/FooterComponents';
 function App() {
