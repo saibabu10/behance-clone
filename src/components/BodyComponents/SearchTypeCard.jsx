@@ -4,7 +4,7 @@ function SearchTypeCard({sItems,icons}) {
   return (
     <div className='flex items-center border-[1px] p-[0.5rem] gap-[1rem] rounded-md'>
 {icons}
-<p className='font-[600]'>{sItems}</p>
+<p className='font-[600] hover:border-red'>{sItems}</p>
 <KeyboardArrowRightIcon sx={{color:"gray"}}/>
     </div>
   )

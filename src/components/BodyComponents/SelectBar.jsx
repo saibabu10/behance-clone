@@ -37,7 +37,7 @@ function SelectBav() {
         {curdata}
         </p>
         <div onClick={handleRecommended}>
-        <ArrowDropDownIcon sx={open && {color:"#0057ff"} } className={`${open && "rotate-180 transition-all ease-in-out delay-150"}`}/>
+        <ArrowDropDownIcon sx={open && {color:"#0057ff"} } className={`${open && "rotate-180 transition-all ease-in-out delay-150 "}`}/>
         </div>
      
        

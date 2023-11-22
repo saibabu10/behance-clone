@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import SearchTypeCard from './SearchTypeCard';
 import { searchType } from '../data/data';
 
-function SearchBav() {
+function SearchBar() {
     const [focused,setFocused] = useState(false);
     const handleSearchFocus=()=>{
         setFocused(pre=>!pre);
@@ -64,4 +64,4 @@ function SearchBav() {
   )
 }
 
-export default SearchBav
+export default SearchBar
