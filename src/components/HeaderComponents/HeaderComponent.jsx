@@ -1,8 +1,7 @@
 import React from 'react'
-
 function HeaderComponent() {
   return (
-    <div className='px-[1rem] py-[0.6rem] border-b-2 flex items-center justify-between'>
+    <div className='px-[1rem] py-[0.6rem] border-b-2 flex items-center justify-between '> 
    <div className='flex items-center gap-[2rem]'>
     <p className='font-[600] text-[1.5rem] relative'>B<span className="before:content-[''] before:w-[0.5rem] before:h-[0.1rem] before:bg-black before:inline-block before:absolute before:top-[0.5rem] before:left-[1.2rem]">e</span>hance</p>
     <p className='font-[600] text-[#191919] hover:border-b border-black'><a href="https://www.behance.net/for_you/onboarding?tracking_source=nav20">For You</a></p>

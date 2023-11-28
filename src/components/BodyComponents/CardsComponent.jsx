@@ -1,23 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { AiFillLike, AiTwotoneEye } from 'react-icons/ai'
 function Card({feUser,featureImg,featureTxt,feLike,feWatch}) {
     const [liked,setliked] = useState(false)
     const [likes,setLikes] = useState(feLike);
     const handleLike  = ()=>{
+      increaseLike()
         setliked(pre=>!pre);
     }
-
-    
-    useEffect(()=>{
-  if(liked){
-    setLikes(pre=>pre+1);
-  }else{
-    setLikes(pre=>pre-1);
+  function increaseLike (){
+    if(!liked){
+        setLikes(pre=>pre+1);
+       }else{
+         setLikes(pre=>pre-1);
+       }
   }
-    },[liked])
   return (
-    <div className='max-w-[20rem]'>
-        <img width={"100%"} className='rounded-md ' src={featureImg} alt="pic"/>
+    <div className='max-w-[20rem] hover:scale-105'>
+        <img width={"100%"} className='rounded-md' src={featureImg} alt="pic"/>
          <div className='flex items-start justify-between'>
             <div className='p-[0.3rem]'>
             <p className='font-[600] '>{feUser}</p>

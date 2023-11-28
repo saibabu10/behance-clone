@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
-import SearchTypeCard from './SearchTypeCard';
+import SearchTypeCard from './SearchTypeCardComponent';
 import { searchType } from '../data/data';
 import axios from 'axios';
 
@@ -11,13 +11,6 @@ function SearchBar() {
     const handleSearchFocus=()=>{
         setFocused(pre=>!pre);
     }
-
-    useEffect(()=>{
-        console.log(value)
-if(value==="" || value==null){
-    setSuggest([]);
-}
-    },[value])
     const handleInputChange = (e)=>{
   
         setvalue(e.target.value);
@@ -25,7 +18,7 @@ if(value==="" || value==null){
         axios.get(`https://api.datamuse.com/words?sp=${e.target.value}*`)
         .then(res=>{
             const firstFive = res.data.slice(0, 5);
-            console.log(firstFive)
+            //console.log(firstFive)
            setSuggest(firstFive);
         })
     }
